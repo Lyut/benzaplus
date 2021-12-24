@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <title>benza+</title>
+
+    <!--
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        // This function is called by the Microloader after it has performed basic
+        // device detection. The results are provided in the "tags" object. You can
+        // use these tags here or even add custom tags. These can be used by platform
+        // filters in your manifest or by platformConfig expressions in your app.
+        //
+        Ext.beforeLoad = function (tags) {
+            var s = location.search,  // the query string (ex "?foo=1&bar")
+                profile;
+
+            // For testing look for "?classic" or "?modern" in the URL to override
+            // device detection default.
+            //
+            if (s.match(/\bclassic\b/)) {
+                profile = 'classic';
+            }
+            else if (s.match(/\bmodern\b/)) {
+                profile = 'modern';
+            }
+            else {
+                profile = tags.desktop ? 'classic' : 'modern';
+                //profile = tags.phone ? 'modern' : 'classic';
+            }
+
+            Ext.manifest = profile; // this name must match a build profile name
+
+            // This function is called once the manifest is available but before
+            // any data is pulled from it.
+            //
+            //return function (manifest) {
+                // peek at / modify the manifest object
+            //};
+        };
+    </script>
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="1a953d83-c9b6-4a3b-957a-95df7a7086fd" type="text/javascript" src="bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body></body>
+</html>
